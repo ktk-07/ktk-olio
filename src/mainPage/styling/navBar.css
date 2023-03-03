@@ -1,0 +1,351 @@
+:root{
+    --mainColour : rgb(175, 255, 56);
+    --navColour: rgb(47, 44, 44);
+}
+
+#navBox{
+    position: fixed;
+    top: 25%;
+    right:1%;
+    z-index: 5;
+    /*z-index only work on elements with their postition not set as static*/
+    height: 50%;
+    width:65px;
+    /* My width of the navBar is not working so when i comeback to this problem i gotta solve it.
+    okay the problem was solved i used width:100%;
+    transition: max-width ease-in 0.2s;
+
+    */
+}
+
+#navOptionsBox{
+    height:100%;
+    width:100%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+    
+}
+
+.navOptionsDivBtn{
+    height:50px;
+    width:50px;
+    padding: 5px;
+    margin-top:10px;
+    background-color: rgb(136, 129, 129);
+    border-radius: 50%;
+    transition: background-color 0.25s ease-in;
+}
+
+.navOptionsDivBtn:hover{
+    background-color: var(--mainColour);
+}
+
+.navOptionsBtn{
+    position: relative;
+    border:none;
+    outline:none;
+    text-decoration: none;
+    display: inline-block;
+    color: rgb(216, 203, 203);
+    height: 100%;
+    width: 100%;
+    margin: 5px auto;
+    transition:color 0.25s ease-in;
+    /* background-color: whitesmoke;
+    border-radius: 50%; */
+}
+
+.navOptionsDivBtn:hover a{
+    color: black;
+}
+
+#navOptionsBox div:nth-child(1){
+    display: none;
+    opacity: 0;
+    top: 0%;
+    left: 0px;
+}
+
+#navOptionsBox div:nth-child(2){
+    display: none;
+    opacity: 0;
+    top:20%;
+    left:0px;
+}
+
+#navOptionsBox div:nth-child(3){
+    display: none;
+    opacity: 0;
+    top:40%;
+    left:0px;
+}
+
+#navOptionsBox div:nth-child(4){
+    display: none;
+    opacity: 0;
+    top:60%;
+    left:0px;
+}
+
+#navOptionsBox div:nth-child(5){
+    display: none;
+    opacity: 0;
+    top:80%;
+    left:0px;
+
+}
+
+.toggleNavBtn{
+    color: black;
+}
+
+.toggleBackground{
+    background-color: var(--mainColour);
+}
+
+
+.btnIcon{
+    position: absolute;
+    top:40%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 28px;
+    height: fit-content;
+    width: fit-content;
+}
+
+
+
+.navOptionsBtn  img{
+    width: 50px;
+    height: 50px;
+}
+
+/* #closeBtnContainer{
+    width: 100%;;
+}
+
+#closeMenuBtn{
+    text-decoration: none;
+    border:none;
+    position: relative;
+    top:0px;
+    right: 0px;
+    color: var(--mainColour);
+    background-color: var(--secondaryColour);
+    height:fit-content;
+    width:fit-content;
+} */
+
+/* #closeMenuBtn:hover{
+    cursor: pointer;
+}
+
+#closeMenuBtn::after{
+    content:"";
+    position: absolute;
+    top:10px;
+    right:0px;
+    height:5px;
+    width:30px;
+    border:1px solid;
+    transform: rotate(45deg);
+    transition:all 0.2s ease;
+} */
+
+/* #closeMenuBtn::before{
+    content:"";
+    position: absolute;
+    top:10px;
+    right:0px;
+    display: block;
+    height:5px;
+    width:30px;
+    border:1px solid;
+    transform: rotate(-45deg);
+    transition: all 0.2s ease;
+} */
+
+/* #closeMenuBtn:hover::after,
+#closeMenuBtn:hover::before{
+    height:5px;
+    width:30px;
+    border:1px solid;
+    color:var(--mainColour);
+}
+
+
+#closeMenuBtn:hover::after{
+    transform: rotate(-45deg);
+}
+
+#closeMenuBtn:hover::before{
+    transform: rotate(45deg);
+}
+
+.accordion{
+    max-height: 20px;
+    overflow-y: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content{
+    height: 150px;
+} */
+
+
+#routeBtn{
+    
+}
+
+
+@keyframes animateOption{
+    0%{
+        top:200%;
+    }
+    100%{
+        top:0%;
+    }
+}
+
+@keyframes animateOptionsBtn1{
+    0%{
+        opacity: 0;
+        top:-75%;
+    }
+    100%{
+        opacity: 1;
+        top:0%;
+    }
+}
+
+@keyframes animateOptionsBtn2{
+    0%{
+        opacity: 0;
+        top:-75%;
+    }
+    100%{
+        opacity: 1;
+        top:20%;
+    }
+}
+@keyframes animateOptionsBtn3{
+    0%{
+        opacity: 0;
+        top:-75%;
+    }
+    100%{
+        opacity: 1;
+        top:40%;
+    }
+}
+@keyframes animateOptionsBtn4{
+    0%{
+        opacity: 0;
+        top:-75%;
+    }
+    100%{
+        opacity: 1;
+        top:60%;
+    }
+}
+@keyframes animateOptionsBtn5{
+    0%{
+        opacity: 0;
+        top:-75%;
+    }
+    100%{
+        opacity: 1;
+        top:80%;
+    }
+}
+
+@keyframes animateDown1{
+    100%{
+        opacity: 0;
+        top:-75%;
+    }
+
+    75%{
+        opacity:0;
+        top:200%;
+    }
+
+    0%{
+        opacity: 1;
+        top:0%;
+    }
+}
+
+@keyframes animateDown2{
+    100%{
+        opacity: 0;
+        top:-75%;
+    }
+
+    75%{
+        opacity:0;
+        top:200%;
+    }
+
+    0%{
+        opacity: 1;
+        top:20%;
+    }
+}
+@keyframes animateDown3{
+
+    0%{
+        opacity: 1;
+        top:40%;
+    }
+
+    75%{
+        opacity:0;
+        top:200%;
+    }
+
+    100%{
+        opacity: 0;
+        top:-75%;
+    }
+
+
+}
+@keyframes animateDown4{
+    0%{
+        opacity: 1;
+        top:60%;
+    }
+    75%{
+        opacity:0;
+        top:200%;
+    }
+    100%{
+        opacity: 0;
+        top:-75%;
+    }
+
+
+}
+@keyframes animateDown5{
+    100%{
+        opacity: 0;
+        top:-75%;
+    }
+
+    75%{
+        opacity:0;
+        top:200%;
+    }
+
+    0%{
+        opacity: 1;
+        top:80%;
+    }
+}

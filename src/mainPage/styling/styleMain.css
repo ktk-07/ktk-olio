@@ -1,0 +1,329 @@
+:root{
+    --mainColour : rgb(175, 255, 56);
+    --secondaryColour : rgb(99, 148, 24);
+    --backgroundColour: rgb(30, 29, 29);
+}
+
+html{
+    margin:0px;
+    padding:0px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+*{
+    margin:0px;
+    padding: 0px;
+    /* color:var(--mainColour); */
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    /* I removed overflow: scroll and there was no longer any scroll btns */
+    background-color: var(--backgroundColour);
+    color: var(--mainColour);
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top:0px;
+    left:0px;
+    min-height: 100vh;
+    max-height: fit-content;
+    width: 100%;
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main{
+    position: relative;
+    top:0px;
+    left:0px;
+    transition: top 0.3s all;
+    width:100%;
+    height:100%;
+}
+
+#info{
+    margin-top: 25px;
+    position: relative;
+    left:0%;
+    width: 100%;
+    height: 20%;
+    transform: scale(1);
+    /* transition: transform 0.2s linear; */
+    font-size: 2rem;
+    animation: animateLeft 0.7s ease-out 0s forwards;
+}
+
+
+#info:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#heading{
+    position: relative;
+    font-family: 'Bebas Neue', cursive, sans-serif;
+    font-size: 8rem;
+    height: 60%;
+    width: 100%;
+    animation: animateDown 0.5s ease-out 0s both;
+    text-align: center;
+}
+
+#heading::before{
+    content:"Full Name";
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    top:-15%;
+    left: 1%;
+    font-size: 11rem;
+    letter-spacing: 18px;
+    word-spacing: 14px;
+    color: rgb(133, 132, 132);
+    opacity: 0.4;
+    z-index: -1;
+}
+
+
+
+.pop:hover{
+    color: white;
+}
+
+#heading span{
+    display: inline-block;
+    height: fit-content;
+    width: fit-content;
+    padding:3px;
+    /* animation: pop 1s ease-in ; */
+}
+
+.page{
+    position: relative;
+    top:0px;
+    left:0px;
+    width:100vw;
+    min-height:100vh;
+    margin: 0px;
+    padding: 0px;
+} 
+
+#descriptionBox{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width:80vw;
+    height: 45vh;
+    text-align: center;
+    margin: 0px auto;
+}
+
+
+
+#exploreBtn{
+    display: block;
+    all:unset;
+    text-align: center;
+    border:1px solid var(--mainColour);
+    background-color: black;
+    color:var(--mainColour);
+    text-decoration: none;
+    margin: 0px auto;
+    transition: all 0.2s ease-out;
+    position: relative;
+    top:0px;
+    left: 0px;
+    font-size: 1.25rem;
+    padding:10px;
+    border-radius: 5px;
+    /* margin-top:50px; */
+    height: 20%;
+    width: 100%;
+    animation: animateRight 0.7s ease-out 0s both;
+}
+
+
+#exploreBtn::after{
+    position: absolute;
+    top:0px;
+    left:-1px;
+    content: "";
+    width:0%;
+    height:101%;
+    border-radius: 5px;
+    background-color: var(--mainColour);
+    transition: all 0.2s ease-out;
+}
+
+
+#rightArrow{
+    position: relative;
+    /* top:28%;
+    right:5%; */
+    height:20px;
+    width:20px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+    z-index: 10;
+}
+
+#exploreBtn:hover #rightArrow{
+    transform: rotate(90deg);
+}
+
+#spanText{
+    display: inline-block;
+    position: relative;
+    z-index:2;
+}
+
+#exploreBtn:hover{
+    cursor: pointer;
+    color: black;
+}
+
+#exploreBtn:hover::after {
+    width:101%;
+}
+
+#navOptions div:hover{
+    cursor: pointer;
+}
+
+footer{
+    width: 100vw;
+    min-height:40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    top:0%;
+    z-index: -1;
+}
+
+
+
+#copyRightBox{
+    color:var(--mainColour);
+    font-size: 16px;
+}
+
+#socialIcons{
+    position: relative;
+    height:55px;
+    width: 200px;
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#socialIcons a{
+    /* Remember that you can't do inline styles */
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    height:50px;
+    width:50px;
+    display: inline-block;
+    /* position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%; */
+    background-color: var(--mainColour);
+}
+
+.footerIcon{
+    display: inline-block;
+    position: absolute;
+    top:0%;
+    left: 0%;
+}
+
+.footerIcon::before{
+    position: absolute;
+    /* top:50%;
+    left:50%;
+    transform: translate(-50%,-50%); */
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    font-size: 47.5px;
+    color: black;
+}
+
+#copyRightBox span{
+    color: var(--mainColour);
+}
+
+
+
+
+
+ @keyframes animateDown{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0%);
+    }
+} 
+
+
+
+@keyframes animateRight{
+    to{
+        transform: translateX(0%);
+    }
+
+    from{
+        transform: translateX(-300%);
+    }
+} 
+
+
+ @keyframes animateLeft{
+    to{
+        transform: translateX(0%);
+    }
+    from{
+        transform: translateX(100%);
+    }
+} 
+
+
+@keyframes pop{
+    35%{
+        transform: scale(1.3,0.8);
+        color: white;
+    }
+
+    70%{
+        transform: scale(0.8,1.3);
+        color: white;
+    }
+
+    95%{
+        transform: scale(1.1,1);
+        color: white;
+    }
+
+    100%{
+        transform: scale(1,1);
+        color: white;
+    }
+
+}

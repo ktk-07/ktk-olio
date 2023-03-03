@@ -1,0 +1,181 @@
+#cVSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position:relative;
+    flex-shrink: 1;
+    width: 100vw;
+    min-height: 100vh;
+    /* max-height: fit-content; */
+    flex-wrap: wrap;
+}
+
+#imgContainer{
+    height: 100vh;
+    width:  50vw;
+    position: relative;
+
+}
+
+#polyShapeBg{
+    position: absolute;
+    top:0%;
+    left:0%;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--mainColour);
+    z-index: -1;
+    clip-path: polygon(0 0, 0% 100%, 50% 50%);
+}
+
+#pixelFlowCanvas{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    height:80vh;
+    width: 80%;
+}
+
+#pixelFlowCanvas img{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    max-width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 10px;
+    background-color: black;
+}
+
+#moreInfoSection{
+    height: 100vh;
+    width: 50vw;
+    position: relative;
+    /* left:-5%; */
+}
+
+#innerInfoContainer{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width:100%;
+
+}
+
+#innerDescriptionBoxCon{
+    width:60%;
+    height:60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    /* font-size:1.5rem; */
+}
+
+#innerDescriptionBoxCon h1{
+    font-size:3rem;
+}
+
+
+#innerDescriptionBox{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#innerDescriptionBox p{
+    font-size: 1.25rem;
+    max-width: 50ch;
+}
+
+#cvBtnCon{
+    display: flex;
+    align-self: flex-start;
+    position:relative;
+    z-index: 1;
+}
+
+
+
+#downloadCvCon{
+    position:relative;
+    /* width: 320px;
+    height: 50px; */
+    border: 0.5px solid var(--mainColour);
+    padding: 0px;
+    margin:20px;
+    border-radius:35px;
+    display: flex;
+    align-items: center;
+    align-self: flex-start;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+#downloadCvCon::after{
+    content: "";
+    width:0%;
+    height:100%;
+    position: absolute;
+    top:0%;
+    left:0%;
+    border-radius:35px;
+    background-color: var(--mainColour);
+    z-index: -1;
+    transition:  width 0.3s ease-out,
+                color 0.3s ease-out;
+}
+
+#downloadCvCon:hover::after{
+    width:100%;
+}
+
+#downloadCvCon:hover #downloadCvCon-text{
+    color:black;
+}
+
+#downloadCvCon-text{
+    display: inline-block;
+    width: fit-content;
+    height: fit-content;
+    padding:0 1rem;
+    color: white;
+    font-weight: 400;
+    transition: color 0.5s ease-out;
+}
+
+#downloadCvCon-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid var(--mainColour);
+    background-color: var(--mainColour);
+    padding: 7px;
+    margin-left:10px;
+    font-size: 1.75rem;
+    /* position: relative;
+    top:0%;
+    left: 0%; */
+}
+
+.downloadIcon{
+    color: black;
+}
+
+

@@ -1,0 +1,963 @@
+@media (max-width:1281px) {
+    /* Home Page */
+
+    html{
+        font-size: 15px;
+    }
+
+    
+    #info{
+        margin-top: 25px;
+        position: relative;
+        left:0%;
+        width: 100%;
+        height: 20%;
+        transform: scale(1);
+        /* transition: transform 0.2s linear; */
+        font-size: 2rem;
+        animation: animateLeft 0.7s ease-out 0s forwards;
+    }
+    
+    #heading::before{
+        left: 1.5%;
+    }
+    
+    
+    #descriptionBox{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width:80vw;
+        height: 35vh;
+        text-align: center;
+        margin: 0px auto;
+    }
+    
+    /* cv Page */
+    
+    .downloadIcon{
+        color: black;
+    }
+    
+    
+    /* Footer */
+    
+    #socialIcons a{
+        /* Remember that you can't do inline styles */
+        position: relative;
+        outline: none;
+        text-decoration: none;
+        height:50px;
+        width:50px;
+        display: inline-block;
+        /* position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        height: 100%; */
+        background-color: var(--mainColour);
+    }
+    
+    .footerIcon{
+        display: inline-block;
+        position: absolute;
+        top:0%;
+        left: 0%;
+    }
+    
+    .footerIcon::before{
+        position: absolute;
+        /* top:50%;
+        left:50%;
+        transform: translate(-50%,-50%); */
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        font-size: 47.5px;
+        color: black;
+    }
+
+    #scrollUpBtn{
+        width: 50px;
+        height: 50px;
+        /* all:unset; */
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top:96%;
+        left:48%;
+        background-color: rgb(18, 88, 18);
+        z-index: 3;
+    }
+}
+
+@media (max-width:1025px){
+
+
+    /* cvSection */
+    #imgContainer{
+        width: 100%;
+    }
+
+    #briefDescriptionBox{
+        width: 100%;
+    }
+
+    #canvasPart{
+        width:100%;
+    }
+
+    
+    #innerDescriptionBoxCon{
+        width:100%;
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBoxCon h1{
+        font-size:3.5rem;
+    }
+    
+    
+    #innerDescriptionBox{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBox p{
+        font-size: 1.75rem;
+        max-width: 40ch;
+    }
+    
+    
+    
+    #downloadCvCon{
+        position:relative;
+        /* width: 320px;
+        height: 50px; */
+        border: 0.5px solid var(--mainColour);
+        padding: 0px;
+        margin:20px;
+        border-radius:35px;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    
+    #downloadCvCon-text{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        padding:0 1rem;
+        color: white;
+        font-weight: 400;
+        font-size: 1.5rem;
+        transition: color 0.5s ease-out;
+    }
+    
+    #downloadCvCon-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid var(--mainColour);
+        background-color: var(--mainColour);
+        padding: 7px;
+        margin-left:10px;
+        font-size: 2rem;
+        /* position: relative;
+        top:0%;
+        left: 0%; */
+    }
+
+    /* Projects */
+    #projectHeader{
+        width: 100%;
+        text-align: center;
+        height: 17.5vh;
+        position: relative;
+        opacity: 0;
+        margin-bottom: 5%;
+        /* animation: projectHeader 0.5s ease-out 1s both; */
+      }
+
+    /* Grid page */
+    #projectGridBox{
+        position: relative;
+        top:5%;
+        display: grid;
+        min-height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+        /* grid-auto-rows: minmax(425px,auto); */
+        column-gap: 35px;
+        row-gap: 35px;
+        /* grid-template-areas: 
+        "1 2 3"
+        "3 4 5"
+        ; */
+    }
+
+}
+
+@media (max-width:913px){
+    /* Home page */
+
+    html{
+        font-size: 10px;
+    }
+
+    
+    #infos{
+        position: relative;
+        left:0%;
+        width: 100%;
+        height: 20%;
+        transform: scale(1);
+        /* transition: transform 0.2s linear; */
+        font-size: 2rem;
+        animation: animateLeft 0.7s ease-out 0s forwards;
+    }
+    
+    #heading::before{
+        top:-7%;
+        left: 1.5%;
+    }
+    
+    
+    #descriptionBox{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width:90vw;
+        height: 35vh;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    /* Cv Page */
+    #imgContainer{
+        width: 100%;
+    }
+
+    #briefDescriptionBox{
+        width: 100%;
+    }
+
+    #canvasPart{
+        width:100%;
+    }
+
+
+    
+    #innerDescriptionBoxCon{
+        width:100%;
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBoxCon h1{
+        font-size:4.5rem;
+    }
+    
+    
+    #innerDescriptionBox{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBox p{
+        font-size: 1.75rem;
+        max-width: 50ch;
+    }
+    
+    
+    
+    #downloadCvCon{
+        position:relative;
+        /* width: 320px;
+        height: 50px; */
+        border: 0.5px solid var(--mainColour);
+        padding: 0px;
+        margin:20px;
+        border-radius:35px;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    
+    #downloadCvCon-text{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        padding:0 1rem;
+        color: white;
+        font-weight: 400;
+        font-size: 2rem;
+        transition: color 0.5s ease-out;
+    }
+    
+    #downloadCvCon-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid var(--mainColour);
+        background-color: var(--mainColour);
+        padding: 7px;
+        margin-left:10px;
+        font-size: 2.5rem;
+        /* position: relative;
+        top:0%;
+        left: 0%; */
+    }
+    
+
+    /* About section. The page works perfectly up to this breakpoint */
+    #amTitle{
+        font-size: 9rem;
+        height:20%;
+        width:100%;
+        position:relative;
+        text-align: center;
+        opacity: 0;
+        /* display: none; */
+    }
+    
+    #amTitle::before{
+        content:"MORE INFO";
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        top:-10%;
+        left:-1%;
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        color: rgb(135, 134, 134);
+        opacity: 0.4;
+        z-index: -1;
+    }
+    
+    #aBcontentDescriptionBox{
+        width: 70%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.5rem;
+    }
+    
+    /* Projects Page . The page works perfectly up to this breakpoint */
+
+    #projectHeader{
+        width: 100%;
+        text-align: center;
+        height: 17.5vh;
+        position: relative;
+        opacity: 0;
+        margin-bottom: 5%;
+        /* animation: projectHeader 0.5s ease-out 1s both; */
+      }
+      
+      #projectHeader h1{
+        font-size: 6rem;
+      }
+
+      .projectFilterBtn{
+        text-decoration: none;
+        outline: none;
+        border: none;
+        padding:1.5px;
+        width: 200px;
+        background-color: rgb(30, 29, 29);
+        color: var(--mainColour);
+        border-radius: 2px;
+        font-size: 2rem;
+      }
+
+      /* Contacts Page. The page works perfectly up to this breakpoint */
+      #uDTitle{
+        text-align: center;
+        position: relative;
+        font-size: 8rem;
+        opacity: 0;
+        height: 10%;
+        width: 100%;
+        /* animation: animateDown 0.3s 0s linear both; */
+    }
+    
+    #uDContentBox h2{
+        text-align: center;
+        position: relative;
+        font-size:2rem;
+        height: 10%;
+        width: 100%;
+    }
+    
+}
+
+
+@media (max-width:612px){
+
+    /* Home */
+
+    html{
+        font-size: 7px;
+    }
+
+    
+    #infos{
+        position: relative;
+        left:0%;
+        width: 100%;
+        height: 20%;
+        transform: scale(1);
+        /* transition: transform 0.2s linear; */
+        font-size: 2rem;
+        animation: animateLeft 0.7s ease-out 0s forwards;
+    }
+    
+    #heading::before{
+        top:-4%;
+        left: 1.5%;
+        letter-spacing: 13px;
+        word-spacing: 7px;
+    }
+    
+    
+    #descriptionBox{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width:100vw;
+        height: 35vh;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    #exploreBtn::after{
+        top:-1px;
+        height: 103%;
+    }
+
+    #exploreBtn:hover::after {
+        width:102%;
+    }
+
+    /* Cv Page */
+    #imgContainer{
+        width: 100%;
+    }
+
+    #briefDescriptionBox{
+        width: 100%;
+    }
+
+    #canvasPart{
+        width:100%;
+    }
+
+
+    
+    #innerDescriptionBoxCon{
+        width:100%;
+        height:90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBoxCon h1{
+        font-size:5rem;
+    }
+    
+    
+    #innerDescriptionBox{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBox p{
+        font-size: 2.75rem;
+        max-width: 40ch;
+    }
+    
+    
+    
+    #downloadCvCon{
+        position:relative;
+        /* width: 320px;
+        height: 50px; */
+        border: 0.5px solid var(--mainColour);
+        padding: 0px;
+        margin:20px;
+        border-radius:35px;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    
+    #downloadCvCon-text{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        padding:0 1rem;
+        color: white;
+        font-weight: 400;
+        font-size: 1.25rem;
+        transition: color 0.5s ease-out;
+    }
+    
+    #downloadCvCon-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid var(--mainColour);
+        background-color: var(--mainColour);
+        padding: 7px;
+        margin-left:10px;
+        font-size: 2rem;
+        /* position: relative;
+        top:0%;
+        left: 0%; */
+    }
+
+    /* About section. */
+
+
+    #amTitle{
+        font-size: 9rem;
+        height:20%;
+        width:100%;
+        position:relative;
+        text-align: center;
+        opacity: 0;
+        /* display: none; */
+    }
+    
+    #amTitle::before{
+        content:"MORE INFO";
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        top:-10%;
+        left:-1%;
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        color: rgb(135, 134, 134);
+        opacity: 0.4;
+        z-index: -1;
+    }
+    
+    #aBcontentDescriptionBox{
+        width: 80%;
+        height: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 1.75rem;
+    }
+
+    /* GridBox */
+    #projectGridBox{
+        position: relative;
+        top:5%;
+        display: grid;
+        min-height: 100%;
+        width: 100%;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(2,1fr);
+        /* grid-auto-rows: minmax(425px,auto); */
+        column-gap: 35px;
+        row-gap: 35px;
+        /* grid-template-areas: 
+        "1 2 3"
+        "3 4 5"
+        ; */
+      }
+
+      /* Projects Page */
+
+      #projectHeader{
+        width: 100%;
+        text-align: center;
+        height: 17.5vh;
+        position: relative;
+        opacity: 0;
+        margin-bottom: 5%;
+        /* animation: projectHeader 0.5s ease-out 1s both; */
+      }
+      
+      #projectHeader h1{
+        font-size: 6.5rem;
+      }
+
+      .projectFilterBtn{
+        text-decoration: none;
+        outline: none;
+        border: none;
+        padding:1.5px;
+        width: 200px;
+        background-color: rgb(30, 29, 29);
+        color: var(--mainColour);
+        border-radius: 2px;
+        font-size: 1.75rem;
+      }
+
+      /* Contact page */
+
+        #uDTitle{
+            text-align: center;
+            position: relative;
+            font-size: 10rem;
+            opacity: 0;
+            height: 10%;
+            width: 100%;
+            /* animation: animateDown 0.3s 0s linear both; */
+        }
+        
+        #uDContentBox h2{
+            text-align: center;
+            position: relative;
+            font-size:2.5rem;
+            height: 10%;
+            width: 100%;
+        }
+
+        #userDetails{
+            width:100%;
+            height: 90%;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #scrollUpBtn{
+            width: 50px;
+            height: 50px;
+            /* all:unset; */
+            font-size: 2rem;
+            color: white;
+            position: absolute;
+            top:96%;
+            left:45%;
+            background-color: rgb(18, 88, 18);
+            z-index: 3;
+        }
+
+}
+
+@media (max-width:391px) {
+    html{
+        font-size: 5px;
+    }
+
+    
+    #infos{
+        position: relative;
+        left:0%;
+        width: 100%;
+        height: 20%;
+        transform: scale(1);
+        /* transition: transform 0.2s linear; */
+        font-size: 2rem;
+        animation: animateLeft 0.7s ease-out 0s forwards;
+    }
+    
+    #heading::before{
+        top:-4%;
+        left: 1.5%;
+        letter-spacing: 13px;
+        word-spacing: 7px;
+    }
+    
+    
+    #descriptionBox{
+        position: absolute;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width:100vw;
+        height: 35vh;
+        text-align: center;
+        margin: 0px auto;
+    }
+
+    #exploreBtn::after{
+        top:-1px;
+        height: 103%;
+    }
+
+    #exploreBtn:hover::after {
+        width:102%;
+    }
+
+    /* Cv Page */
+    #imgContainer{
+        width: 100%;
+    }
+
+    #briefDescriptionBox{
+        width: 100%;
+    }
+
+    #canvasPart{
+        width:100%;
+    }
+
+
+    
+    #innerDescriptionBoxCon{
+        width:100%;
+        height:60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBoxCon h1{
+        font-size:5rem;
+    }
+    
+    
+    #innerDescriptionBox{
+        width:100%;
+        height:100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    #innerDescriptionBox p{
+        font-size: 2.5rem;
+        max-width: 40ch;
+    }
+    
+    
+    
+    #downloadCvCon{
+        position:relative;
+        /* width: 320px;
+        height: 50px; */
+        border: 0.5px solid var(--mainColour);
+        padding: 0px;
+        margin:20px;
+        border-radius:35px;
+        display: flex;
+        align-items: center;
+        align-self: flex-start;
+        font-weight: 100;
+        cursor: pointer;
+    }
+    
+    #downloadCvCon-text{
+        display: inline-block;
+        width: fit-content;
+        height: fit-content;
+        padding:0 1rem;
+        color: white;
+        font-weight: 400;
+        font-size: 1.75rem;
+        transition: color 0.5s ease-out;
+    }
+    
+    #downloadCvCon-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 1px solid var(--mainColour);
+        background-color: var(--mainColour);
+        padding: 7px;
+        margin-left:10px;
+        font-size: 2rem;
+        /* position: relative;
+        top:0%;
+        left: 0%; */
+    }
+
+    /* About section. */
+
+
+    #amTitle{
+        font-size: 10rem;
+        height:10%;
+        width:100%;
+        position:relative;
+        text-align: center;
+        opacity: 0;
+        /* display: none; */
+    }
+    
+    #amTitle::before{
+        content:"MORE INFO";
+        position:absolute;
+        height: 100%;
+        width: 100%;
+        top:-10%;
+        left:-1%;
+        font-size: 5.5rem;
+        letter-spacing: 2px;
+        word-spacing: 5px;
+        color: rgb(135, 134, 134);
+        opacity: 0.4;
+        z-index: -1;
+    }
+    
+    #aBcontentDescriptionBox{
+        width: 80%;
+        height: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 2.5rem;
+    }
+
+    /* Projects Page */
+
+    #projectHeader{
+        width: 100%;
+        text-align: center;
+        height: 17.5vh;
+        position: relative;
+        opacity: 0;
+        margin-bottom: 5%;
+      }
+      
+      #projectHeader h1{
+        font-size: 6rem;
+      }
+
+      .projectFilterBtn{
+        text-decoration: none;
+        outline: none;
+        border: none;
+        padding:1.5px;
+        width: 200px;
+        background-color: rgb(30, 29, 29);
+        color: var(--mainColour);
+        border-radius: 2px;
+        font-size: 1.75rem;
+      }
+
+    /* Contact page */
+
+    #uDTitle{
+        text-align: center;
+        position: relative;
+        font-size: 10rem;
+        opacity: 0;
+        height: 10%;
+        width: 100%;
+        /* animation: animateDown 0.3s 0s linear both; */
+    }
+    
+    #uDContentBox h2{
+        text-align: center;
+        position: relative;
+        font-size:2.5rem;
+        height: 10%;
+        width: 100%;
+    }
+
+    #userDetails{
+        width:100%;
+        height: 90%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    #formSubmitBtn{
+        all:unset;
+        position: relative;
+        font-size: 1.3rem;
+        color: var(--mainColour);
+        height: 50px;
+        width: 100px;
+        opacity: 0;
+        margin:10px;
+        padding:5px;
+        border: 1px var(--mainColour) solid;
+        text-align: center;
+        z-index: 2;
+        /* background-color: black; */
+        cursor:pointer;
+        transition: color 0.5s ease-out ;
+    }
+
+    #scrollUpBtn{
+        width: 50px;
+        height: 50px;
+        /* all:unset; */
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        display: inline-block;
+        top:94%;
+        left:45%;
+        background-color: rgb(18, 88, 18);
+        z-index: 3;
+    }
+}
+
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+
+
