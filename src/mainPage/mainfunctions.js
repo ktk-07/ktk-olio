@@ -50,3 +50,7 @@ function animateNavBar(){
 }
 
 animateNavBar();
+
+function forAlert(){
+    alert("feature not available as of right now")
+}
